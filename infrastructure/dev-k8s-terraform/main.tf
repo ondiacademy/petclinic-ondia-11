@@ -98,6 +98,7 @@ resource "aws_instance" "kube-master" {
     Role = "master"
     Id = "1"
     environment = "dev"
+    app = "petclinic"
   }
 }
 
@@ -114,6 +115,7 @@ resource "aws_instance" "worker-1" {
     Role = "worker"
     Id = "1"
     environment = "dev"
+    app = "petclinic"
   }
 }
 
@@ -130,6 +132,7 @@ resource "aws_instance" "worker-2" {
     Role = "worker"
     Id = "2"
     environment = "dev"
+    app = "petclinic"
   }
 }
 
