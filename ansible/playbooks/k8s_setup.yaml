@@ -157,3 +157,7 @@
     - name: Show join output
       ansible.builtin.debug:
         msg: "{{ join_output.stdout }}"
+
+    # - name: Show all hostvars
+    #   ansible.builtin.debug:
+    #     msg: "{{ hostvars | to_nice_json }}"
