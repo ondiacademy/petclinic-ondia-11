@@ -1,4 +1,4 @@
-./mvnw clean package
+#./mvnw clean package
 docker build  -t "petclinic-admin-server:dev" ./spring-petclinic-admin-server
 docker build  -t "petclinic-api-gateway:dev" ./spring-petclinic-api-gateway
 docker build  -t "petclinic-config-server:dev" ./spring-petclinic-config-server
